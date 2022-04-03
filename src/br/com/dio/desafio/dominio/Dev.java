@@ -33,6 +33,13 @@ public class Dev {
                 .sum();
     }
 
+    public void imprimirCertificado(){
+        if(conteudosInscritos.isEmpty()){
+            System.out.print("\nCertificamos que " + this.getNome() + " concluiu o Bootcamp com sucesso.");
+        }else
+            System.out.print("\n" + this.getNome() + " você precisa concluir todo o conteúdo para pegar seu certificado.");
+    }
+
     public String getNome() {
         return nome;
     }
